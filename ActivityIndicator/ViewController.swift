@@ -14,7 +14,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        var activityIndicatorView:ActivityIndicatorView = ActivityIndicatorView().initWithType(ActivityIndicatorViewType.DLActivityIndicatorTypeLargeTeal) as ActivityIndicatorView;
+        var activityIndicatorView:ActivityIndicatorView = ActivityIndicatorView().initWithType(ActivityIndicatorViewType.DLActivityIndicatorTypeLargeTeal) as! ActivityIndicatorView;
         activityIndicatorView.center = CGPointMake(self.view.frame.size.width/2, self.view.frame.size.height/2)
         self.view.addSubview(activityIndicatorView)
         activityIndicatorView.startAnimation()
